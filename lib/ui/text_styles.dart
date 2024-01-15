@@ -6,5 +6,6 @@ abstract class TextStyles{
 
   static const TextStyle tStyleNormalPrincipal18 = TextStyle(fontSize: 18, color: ColorPalette.colorBlanco);
 
+  static const TextStyle tStyleBold18 = TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: ColorPalette.colorSecundario);
   static const TextStyle tStyleBold24 = TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: ColorPalette.colorSecundario);
 }

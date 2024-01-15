@@ -48,7 +48,7 @@ class _LoginPageState extends State<LoginPage> {
                 fontSize: 14,
                 fontWeight: FontWeight.bold,
                 color: Colors.white),),
-              onPressed: ()=>(),
+              onPressed: ()=>Navigator.pushNamed(context, 'contacto'),
             ),
           ],
         ),

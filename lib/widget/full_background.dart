@@ -63,7 +63,7 @@ class _MainBox extends StatelessWidget {
             margin: const EdgeInsets.only(top: 100),
             width: 200,
             height: 100,
-            child: const Placeholder(color: ColorPalette.colorSecundario,))//Image(image: AssetImage(mainBox == true ? 'assets/smartsecurity.jpeg' : 'assets/empty.png'), width: size.width * 0.80,),
+            child: mainBox == true ? const Placeholder(color: ColorPalette.colorSecundario,) : Container())//Image(image: AssetImage(mainBox == true ? 'assets/smartsecurity.jpeg' : 'assets/empty.png'), width: size.width * 0.80,),
         )),
         // Positioned(top: 90, left: 30,child: _Bubble()),
         // Positioned(top: -40, left: -30,child: _Bubble()),

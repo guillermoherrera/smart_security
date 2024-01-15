@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
       initialRoute: 'login',
       routes: {
         'login': (_)=> const LoginPage(),
+        'contacto': (_)=> const ContactoPage(),
       }
     );
   }
