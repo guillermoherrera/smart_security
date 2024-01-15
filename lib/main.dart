@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
       routes: {
         'login': (_)=> const LoginPage(),
         'contacto': (_)=> const ContactoPage(),
+        'home': (_)=> const HomePage(),
       }
     );
   }

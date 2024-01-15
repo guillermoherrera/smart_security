@@ -23,7 +23,7 @@ class _LoginFormState extends State<LoginForm> {
       setState(() => loading = true);
       await Future.delayed(const Duration(seconds: 3));
       setState(() => loading = false);
-      if(context.mounted) Navigator.pushReplacementNamed(context, 'login');
+      if(context.mounted) Navigator.pushReplacementNamed(context, 'home');
     }
 
     chanceObscureText() => setState(()=>obscureText = !obscureText);
