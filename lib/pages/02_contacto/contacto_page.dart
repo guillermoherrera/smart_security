@@ -20,11 +20,11 @@ class _ContactoPageState extends State<ContactoPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Contacto', style: TextStyles.tStyleBold24,),
+              Text('Contacto', style: TextStyles.tStyleSecBold24,),
               SizedBox(height: 10),
-              Text('Empresa', style: TextStyles.tStyleBold18,),
-              Text('www.empresa.com', style: TextStyles.tStyleBold18,),
-              Text('(987)654-32-10', style: TextStyles.tStyleBold18,),
+              Text('Empresa', style: TextStyles.tStyleSecBold18,),
+              Text('www.empresa.com', style: TextStyles.tStyleSecBold18,),
+              Text('(987)654-32-10', style: TextStyles.tStyleSecBold18,),
               SizedBox(height: 50),
               Row(
                 mainAxisSize: MainAxisSize.max,

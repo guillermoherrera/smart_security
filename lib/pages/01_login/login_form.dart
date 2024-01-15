@@ -34,7 +34,7 @@ class _LoginFormState extends State<LoginForm> {
       child: Column(
         children: [
           const SizedBox(height: 50),
-          const Text('Login', style: TextStyles.tStyleBold24,),
+          const Text('Login', style: TextStyles.tStyleSecBold24,),
           const SizedBox(height: 20),
           TextFormField(
             enabled: !loading,

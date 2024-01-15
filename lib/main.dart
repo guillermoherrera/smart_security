@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
         'login': (_)=> const LoginPage(),
         'contacto': (_)=> const ContactoPage(),
         'home': (_)=> const HomePage(),
+        'botonPanico': (_)=> const BotonPanicoPage(),
       }
     );
   }

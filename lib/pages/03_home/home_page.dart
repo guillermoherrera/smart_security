@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
     void onItemTapped(int index) {
       switch (index) {
         case 0:
-          //Navigator.pushNamed(context, 'home', arguments: 0);
+          Navigator.pushNamed(context, 'botonPanico', arguments: 0);
           break;
         case 1:
           //Navigator.pushNamed(context, 'home', arguments: 0);
