@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
           //Navigator.pushNamed(context, 'notificaciones', arguments: 0);
           break;
         case 3:
-          //Navigator.pushReplacementNamed(context, 'login', arguments: 0);
+          Navigator.pushNamed(context, 'perfil', arguments: 0);
           break;
         case 4:
           //Navigator.pushReplacementNamed(context, 'login', arguments: 0);
