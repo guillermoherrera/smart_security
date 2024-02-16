@@ -12,7 +12,7 @@ class CustomElevatedButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,//()=>_displayBottomSheet(context, size),
       style: ButtonStyle(
-        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 40)),
+        padding: MaterialStateProperty.all<EdgeInsets>(const EdgeInsets.symmetric(horizontal: 40)),
         backgroundColor: MaterialStateProperty.resolveWith((states) {
           // If the button is pressed, return green, otherwise blue
           if (states.contains(MaterialState.pressed)) {

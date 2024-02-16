@@ -34,6 +34,7 @@ class _BotonPanicoPageState extends State<BotonPanicoPage> {
               child: const Text('Pedir Ayuda'),
               onPressed: () {
                 Navigator.of(context).pop();
+                ayuda();
               },
             ),
           ],
@@ -44,6 +45,18 @@ class _BotonPanicoPageState extends State<BotonPanicoPage> {
 
   pedirAyuda(BuildContext context){ 
     dialogBuilder(context);
+  }
+
+  ayuda(){
+    final snackBar = SnackBar(
+      content: const Text('Se ha enviado el mensaje de Ayuda!'),
+      action: SnackBarAction(
+        label: 'OK',
+        onPressed: () {},
+      ),
+    );
+
+    ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 
   @override
@@ -60,7 +73,10 @@ class _BotonPanicoPageState extends State<BotonPanicoPage> {
                 enable: true, 
                 texto: 'Botón\nde\nPánico',
                 onTap: () => pedirAyuda(context),
-                onLongPress: (){},
+                onLongPress: ()async{
+                  await Future.delayed(const Duration(seconds: 1));
+                  ayuda();
+                },
               ),
             ],
           ),

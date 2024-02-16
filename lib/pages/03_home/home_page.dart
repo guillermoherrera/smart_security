@@ -46,8 +46,8 @@ class HomePage extends StatelessWidget {
                 children: [
                   ListTile(
                     dense: true,
-                    title: Text('Bienvenido Guillermo Herrera', style: TextStyles.tStyleNormal14,),
-                    subtitle: Text('Usuario 001 - Dirección', style: TextStyles.tStyleNormal14),
+                    title: Text('Bienvenido Guillermo Herrera', style: TextStyles.tStyleBold14,),
+                    subtitle: Text('Último Login: 01.01.2024 00:00', style: TextStyles.tStyleNormal14),
                   )
                 ],
             ),),
@@ -76,11 +76,11 @@ class HomePage extends StatelessWidget {
                   const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text('Lista', style: TextStyles.tStyleBold14,),
+                      Text('Home', style: TextStyles.tStyleBold14,),
                     ],
                   ),
                   SizedBox(
-                    height: size.height * 0.45,
+                    height: size.height * 0.50,
                     child: ListView.builder(
                       shrinkWrap: true,
                       itemCount: 10,
@@ -99,7 +99,7 @@ class HomePage extends StatelessWidget {
                                     color: ColorPalette.colorBlanco,
                                     shape: BoxShape.circle
                                   ),
-                                  child: const Icon(Icons.note_alt_outlined, color: ColorPalette.colorPrincipal,)),
+                                  child: const Icon(Icons.circle, color: ColorPalette.colorPrincipal,)),
                                 title: const Text('Item', style: TextStyles.tStyleBold14,),
                                 subtitle: const Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
